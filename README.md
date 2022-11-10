@@ -1,4 +1,4 @@
-![Wine Picture]()
+![Wine Picture](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Wine_Image.jpg)
 
 # Wine Reviews
 
@@ -20,7 +20,7 @@ Finally, I will create a recommendation system for Wine Enthusiast's tasters in 
 
 ## Dataset
 
-![Wine Enthusiast]()
+![Wine Enthusiast](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Wine_Enthusiast.png)
 
 The data that I am using comes from Wine Enthusiast and includes information on 130,000 different wines.  This information includes the description, variety, winery, country, taster name, etc.  
 
