@@ -6,7 +6,7 @@
 
 ## Overview
 
-Natural Language Processing to discover which attributes are indicative of a highly scoring wine and create a recommendation system for Wine Enthusiast's tasters using Surprise.
+Natural Language Processing to discover which attributes are indicative of a highly scoring wine and recommendation systems for Wine Enthusiast's tasters using Surprise.
 
 ## Business Problem
 
@@ -19,6 +19,8 @@ I will also pick out keywords and flavor profiles from wine descriptions that re
 Finally, I will create a recommendation system for Wine Enthusiast's tasters in order to understand which wines are most often highly recommended.
 
 ## Dataset
+
+![Wine Enthusiast]()
 
 The data that I am using comes from Wine Enthusiast and includes information on 130,000 different wines.  This information includes the description, variety, winery, country, taster name, etc.  
 
@@ -65,7 +67,7 @@ Before performing any Natural Language Processing, I created a baseline model wi
 
 **Confusion Matrix:**
 
-![Baseline Confusion Matrix]()
+![Baseline Confusion Matrix](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/ConfusionMatrix_1.jpg)
 
 This model is not terrible, but I will try to increase it's accuracy with Natural Language Processing.
 
@@ -83,7 +85,7 @@ After NLP, I created the final model.
 
 **Confusion Matrix:**
 
-![Final Confusion Matrix]()
+![Final Confusion Matrix](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/ConfusionMatrix_2.jpg)
 
 Even though this model has some difficulty identifying the outlier targets (0 and 3) it does a good job predicting whether a wine will be in the upper (2 and 3) or lower (0 and 1) half.  This model can be used reliably to predict if a wine will make it into the 'Very Good' tier, which would be very helpful for a wine maker.
 
@@ -99,25 +101,25 @@ I will be using the points range that we established above:
 
 ### Acceptable Wines
 
-![Acceptable Cloud]()
+![Acceptable Cloud](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Acceptable_Cloud.jpg)
 
 In this word cloud, we are seeing words like 'green', 'simple', 'acidity', 'bitter', and 'light'.  These words seem to be indicative of a wine that is lacking balance and body.
 
 ### Good Wines
 
-![Good Cloud]()
+![Good Cloud](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Good_Cloud.jpg)
 
 This word cloud shows us many fruit notes; 'apple', 'cherry', 'berry', 'citrus' as well as 'fresh' and 'crisp'.  These wines could be lacking depth of flavor or complexity.
 
 ### Very Good Wines
 
-![Very Good Cloud]()
+![Very Good Cloud](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Very_Good_Cloud.jpg)
 
 In this word cloud we are starting to see bolder words; 'black', 'ripe', 'rich', 'plum', 'texture', and 'chocolate'.  These wines seem to be more complex and less fruit forward.
 
 ### Outstanding Wines
 
-![Outstanding Cloud]()
+![Outstanding Cloud](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Outstanding_Cloud.jpg)
 
 One interesting word that immediately jumps to the eye is 'cabernet'. This variety would be worth exploring since it is the only variety that made it into any of our word clouds. These outstanding wines are also characterized by the words 'complex', 'spice', 'dense', 'time', 'aging' and 'pepper'.  These words seem to point us in the direction of full bodied and complex red wines that have been aged for a decent period of time.
 
@@ -135,7 +137,7 @@ I chose to go this route because I believe that the more ratings a wine has, the
 
 ### Mean Scores
 
-![Mean Wine Scores]()
+![Mean Wine Scores](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Mean_Variety_Scores.jpg)
 
 The wines with the top 5 highest mean scores are:
 * Nebbiolo - 90.25
@@ -201,7 +203,7 @@ These wines historically score highly and also correspond with the keywords we d
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook]() or review my [presentation]().
+See the full analysis in the [NLP Jupyter Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-NLP.ipynb) and [Recommendation Juptyer Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-Recommendation-Systems.ipynb) or review my [presentation]().
 
 For additional information, contact Elizabeth Webster at [eaw524@gmail.com](eaw524@gmail.com)
 
@@ -212,6 +214,6 @@ For additional information, contact Elizabeth Webster at [eaw524@gmail.com](eaw5
 ├── Images
 ├── README.md
 ├── .pdf
-├── .ipynb
-└── .ipynb
+├── Wine-Reviews-NLP.ipynb
+└── Wine-Reviews-Recommendation-Systems.ipynb
 ```
