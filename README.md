@@ -42,6 +42,8 @@ I will build a Naive Bayes model that the wine maker can utilize to predict how 
 
 I am dropping columns that are missing high numbers of values (designation, region_1, region_2) and dropping taster info (taster_name, taster_twitter_handle) and title as these columns should not impact point value.
 
+![Point Distribution](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Point_Distribution.jpeg)
+
 Our target is the number of points that a wine has scored out of 100.  Unsurprisingly, it follows a normal distribution. Since we are creating a classification model we will break our target up into 4 categories:
 * 80-84 points: 0 - Acceptable
 * 85-89 points: 1 - Good
