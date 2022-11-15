@@ -241,7 +241,7 @@ These wines historically score highly and also correspond with the keywords we d
 
 ## For More Information
 
-See the full analysis in the [NLP Jupyter Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-NLP.ipynb) and [Recommendation Juptyer Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-Recommendation-Systems.ipynb) or review my [presentation]().
+See the full analysis in the [NLP Jupyter Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-NLP.ipynb) and [Recommendation Juptyer Notebook](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-Recommendation-Systems.ipynb) or review my [presentation](https://github.com/elizabeth524/Capstone-Project/blob/main/Wine-Reviews-Presentation.pdf).
 
 For additional information, contact Elizabeth Webster at [eaw524@gmail.com](eaw524@gmail.com)
 
@@ -251,7 +251,7 @@ For additional information, contact Elizabeth Webster at [eaw524@gmail.com](eaw5
 ├── Data
 ├── Images
 ├── README.md
-├── .pdf
 ├── Wine-Reviews-NLP.ipynb
+├── Wine-Reviews-Presentation.pdf
 └── Wine-Reviews-Recommendation-Systems.ipynb
 ```
