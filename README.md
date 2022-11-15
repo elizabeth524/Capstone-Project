@@ -16,7 +16,7 @@ In this project, I will create a model to predict wine scores that can be used t
 
 I will also pick out keywords and flavor profiles from wine descriptions that relate to high and low scoring wines in order for the wine maker to understand what direction to move in and look into what wine varieties are currently receiving high scores.
 
-Finally, I will create a recommendation system for Wine Enthusiast's tasters in order to understand which wines are most often highly recommended.
+Finally, I will create a recommendation system for Wine Enthusiast's tasters in order to suggest wines to certain tasters. By understanding the wines that are recommended, the winery will get an idea of what type of wines to create and who to market them to.
 
 ## Dataset
 
@@ -180,12 +180,38 @@ Based on these findings, the three wines that I believe have the best potential 
 
 ## Recommendation Systems
 
+I will create a recommendation system for Wine Enthusiast's tasters in order to suggest wines to certain tasters. By understanding the wines that are recommended, the winery will get an idea of what type of wines to create and who to market them to.
+
+### Data Cleaning
+
+For this section of the project, I am only interested in three columns from our dataset: taster name (users), title (items), and points (target).  Since I am interested in user's preferences, I dropped the values that were missing taster names.
 
 ### Builing a Model
 
+For the recommendation system, I explored three different models to use:
+* SVD - Singular Value Decomposition
+* KNN Basic
+* KNN Baseline
+
+The metric I am interested in is RMSE - Root Mean Squared Error.  The model with the lowest RMSE is the SVD Model.
 
 ### Model Predictions
 
+From the model, I created a function to predict the top five recommended wines for each taster.
+
+The red varieties that are showing up the most are:
+* Pinot Noir
+* Cabernet Sauvignon
+* Syrah
+
+The white varieties that are showing up the most are:
+* Riesling
+* Chardonnay
+
+The tasters that are recommended wines from our city, Walla Walla, or region, the Pacific Northwest are:
+* Sean Sullivan
+* Paul Gregutt
+* Virginie Boone
 
 
 ## Recommendations
@@ -201,16 +227,16 @@ Based on these findings, the three wines that I believe have the best potential 
 
 These wines historically score highly and also correspond with the keywords we discovered above.
 
-**Recommendation Systems** - 
+**Recommendation Systems** - From the recommendation system I would recommend producing Pinot Noirs, Cabernets, Syrahs, Rieslings, and Chardonnays. Once the wines have been produced, I would recommend sending them to Sean, Paul, or Virginie for tasting. These tasters enjoy the above varieties from our region, so they are most likely to highly rate our wines.
 
 
 ## Next Steps
 
 **Putting Model into Action** - The first step I would take is gathering the data from our current wines to predict their score level.
 
-**Exploring Wineries** - One next step we could take is exploring the different wineries in the dataset.  If certain wineries are receiving high scores for their wines, we can look into their processes for creating wines.
+**Exploring Wineries** - Another step we could take is exploring the different wineries in the dataset.  If certain wineries are receiving high scores for their wines, we can look into their processes for creating wines.
 
-**Cold Start Problem** - 
+**Cold Start Problem** - Finally, I would be address the cold start problem, or how to recommend wines for a user that we have no information on. The strategy I would use is having the new user provide preferences on a few of the wines to get us started.
 
 
 ## For More Information
