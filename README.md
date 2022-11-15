@@ -22,7 +22,7 @@ Finally, I will create a recommendation system for Wine Enthusiast's tasters in 
 
 ![Wine Enthusiast](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Wine_Enthusiast.png)
 
-The data that I am using comes from Wine Enthusiast and includes information on 130,000 different wines.  This information includes the description, variety, winery, country, taster name, etc.  
+The data that I am using comes from 2017 Wine Enthusiast and includes information on 130,000 different wines.  This information includes the description, variety, winery, country, taster name, etc.  
 
 The target value is the 'points' column.  This column contains a score from 80 to 100 for each wine.  All the wines in this range are perfectly drinkable, but I have broken down this category into four ranges:
 * 80-84 points: 0 - Acceptable
@@ -36,11 +36,19 @@ For the recommendation systems piece of this project, it is important to note th
 
 ## Building a Model
 
-I will build a Naive Bayes model that the wine maker can utilize to predict how well their current wines will perform.
+I will build a Multinomial Naive Bayes model that the wine maker can utilize to predict how well their current wines will perform.
 
 ### Data Cleaning
 
-I am dropping columns that are missing high numbers of values (designation, region_1, region_2) and dropping taster info (taster_name, taster_twitter_handle) and title as these columns should not impact point value.
+I am dropping columns that are missing high numbers of values:
+* designation
+* region_1
+* region_2 
+
+I am also dropping columns should not impact point value.:
+* taster_name
+* taster_twitter_handle 
+* title 
 
 ![Point Distribution](https://github.com/elizabeth524/Capstone-Project/blob/main/Images/Point_Distribution.jpeg)
 
@@ -65,7 +73,7 @@ In order to use all of the data, I need to One Hot Encode the following categori
 
 ### Baseline Model
 
-Before performing any Natural Language Processing, I created a baseline model with the raw text.  After vectorizing our text and joining it with our other variables, the model created performed with a 64% accuracy.
+Before performing any Natural Language Processing, I created a baseline Multinomial Naive Bayes model with the raw text.  After vectorizing our text and joining it with our other variables, the model created performed with a 64% accuracy.
 
 **Confusion Matrix:**
 
@@ -83,7 +91,7 @@ The steps taken for Natural Language Processing (NLP) of our 'description' colum
 
 ### Final Model
 
-After NLP, I created the final model.
+After NLP, I created the final Multinomial Naive Bayes model.
 
 **Confusion Matrix:**
 
@@ -201,6 +209,8 @@ These wines historically score highly and also correspond with the keywords we d
 **Putting Model into Action** - The first step I would take is gathering the data from our current wines to predict their score level.
 
 **Exploring Wineries** - One next step we could take is exploring the different wineries in the dataset.  If certain wineries are receiving high scores for their wines, we can look into their processes for creating wines.
+
+**Cold Start Problem** - 
 
 
 ## For More Information
